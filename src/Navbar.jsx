@@ -26,7 +26,9 @@ const navbar = () => {
               <Link to="/Pricing" className='navbar-link'>Pricing</Link>
             </li>
 
-            <li className='navbar-item'><a href='#contact' className='navbar-link'>Contact us</a></li>
+            <li className='navbar-item'>
+              <a href='/Contact' className='navbar-link'>Contact us</a>
+              </li>
           </ul>
           <div className="btn">Get a quote</div>
         </div>
