@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Home from './Home'
+import About from './About'
 import Service from './Service'
 import Pricing from './Pricing'
 import Contact from './Contact'
@@ -14,8 +15,9 @@ const App = () => {
       <Navbar/>
           <Routes>
               <Route path="/" element={<Home/>} />
+              <Route path="/About" element={<About/>} />
               <Route path="/Service" element={<Service/>} />
-              <Route path="/Pricing" element={<Pricing/>} />
+              {/* <Route path="/Pricing" element={<Pricing/>} /> */}
               <Route path="/Contact" element={<Contact/>} />
             </Routes>
       </Router>
