@@ -10,3 +10,12 @@
   --text-light: rgba(255, 255, 255, 0.9);
   --accent: #08b6d9;
 }
+
+:root{
+  --primary-color: #f0f0f0;
+  --Primary-color: #09B6D9;
+  --bg: #031b25;
+  --secondary-color: #FF8A05;
+  --footer-: #0e0e0e;
+  /* ---bg: #082632; */
+}

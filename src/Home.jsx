@@ -1,5 +1,5 @@
 import React from 'react'
-import Why from './Why'
+
 import Footer from './Footer'
 
 import './Home.css'
@@ -44,7 +44,6 @@ const home = () => {
 
       </div>
 
-      <Why/>
 
       <Footer/>
 

@@ -2,32 +2,44 @@ import React from 'react';
 import BeforeAfterSlider from './BeforeAfterSlider'; // Adjust the import path if necessary
 import './Service.css';  // Import the CSS file
 
-const ServicePage = () => {
+const Service = () => {
   return (
-    <div className="service-page">
-      <header className="service-page-header">
-        <h1>Our Amazing Service</h1>
-        <p>Check out the before and after images of our service!</p>
-      </header>
+    <div className='service'>
 
-      <section className="service-content">
-        <h2>Before and After Results</h2>
-        <p>Here you can see the transformation that our service brings.</p>
-        
-        {/* Before and After Slider Component */}
-        <BeforeAfterSlider
-          beforeImage="src/assets/before2.jpg"  // Adjust paths as necessary
-          afterImage="src/assets/After2.jpg"
-          beforeAlt="Before the service"
-          afterAlt="After the service"
-        />
-      </section>
+      <div className="service-container">
 
-      <footer className="service-footer">
-        <p>&copy; 2025 Our Company. All rights reserved.</p>
-      </footer>
+        <div className="service-content">
+
+          <BeforeAfterSlider
+            beforeImage="src/assets/before2.jpg"  // Adjust paths as necessary
+            afterImage="src/assets/After2.jpg"
+            beforeAlt="Before the service"
+            afterAlt="After the service"
+          />
+          <div className="description">
+            <h1>Ecommerce services</h1>
+            <p>"Optimized and enhanced images tailored for eCommerce — ready for fast-loading, high-converting product listings."</p>
+            <button className='service-button'>Free trial</button>
+          </div>
+        </div>
+      </div>
+
+      <div className="service-buttons">
+        <button className='service-cta'>Web optimize</button>
+        <button className='service-cta'>Image enchancement</button>
+        <button className='service-cta'>Retouching</button>
+        <button className='service-cta'>Clip path & Mask</button>
+        <button className='service-cta'>Editorial</button>
+        <button className='service-cta'>Ghost mannequin</button>
+        <button className='service-cta'>File conversion</button>
+        <button className='service-cta'>Color correction</button>
+        <button className='service-cta'>Background removal</button>
+        <button className='service-cta'>Image manipulation</button>
+      </div>
+
+
     </div>
-  );
-};
+  )
+}
 
-export default ServicePage;
+export default Service

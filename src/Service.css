@@ -1,123 +1,107 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-/* Service Page Container */
-.service-page {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    width: 100dvw;
-    height: 100dvh;
-    margin: 0 auto;
-    background-color: var(--bg);
-  }
+.service{
+  display: flex;
+  background-color: var(--bg);
+  height: 100dvh;
+  width: 100dvw;
+  align-items: center;
   
-  /* Header Styling */
-  .service-page-header {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .service-page-header h1 {
-    font-size: 3rem;
-    color: #2d3e50;
-    margin-bottom: 10px;
-  }
-  
-  .service-page-header p {
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
-  /* Main Content Section */
-  .service-content {
-    text-align: center;
-    margin-bottom: 60px;
-  }
-  
-  .service-content h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .service-content p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 30px;
-  }
-  
-  /* Before-After Slider Styles */
-  .service-content .before-after-slider-container {
-    margin: 0 auto;
-    width: 20rem;
-    max-width: 1000px; 
-    height: 20rem;
-  }
-  
-  .before-after-slider-container img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  /* Footer Styling */
-  .service-footer {
-    text-align: center;
-    margin-top: 60px;
-    font-size: 0.9rem;
-    color: #888;
-  }
-  
-  .service-footer p {
-    margin: 10px 0;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .service-page-header h1 {
-      font-size: 2.5rem;
-    }
-  
-    .service-content h2 {
-      font-size: 1.8rem;
-    }
-  
-    .service-content p {
-      font-size: 1rem;
-    }
-  
-    .service-footer p {
-      font-size: 0.8rem;
-    }
-  
-    .before-after-slider-container {
-      width: 95%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .service-page-header h1 {
-      font-size: 2rem;
-    }
-  
-    .service-content h2 {
-      font-size: 1.6rem;
-    }
-  
-    .service-content p {
-      font-size: 0.9rem;
-    }
-  
-    .service-footer p {
-      font-size: 0.7rem;
-    }
-  
-    .before-after-slider-container {
-      width: 100%;
-    }
-  }
-  
+}
+
+.service-container{
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  max-height: 70%;
+  background-color: var(--bg);
+  margin-top: 5%;
+  box-shadow: 2px 2px 20px 3px rgba(0, 0, 0, 0.6);
+  margin-left: 5%;
+}
+
+.service-content{
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.before-after-slider-container {
+  margin: 0 auto;
+  width: 25rem;
+  max-width: 1000px; 
+  height: 25rem;
+}
+
+.before-after-slider-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.description{
+  padding: 2rem;
+  width: 25rem;
+  max-width: 1000px; 
+  height: 25rem;
+  max-width: 1000px;
+  font-family: "poppins", sans-serif;
+}
+
+.description h1{
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 2rem 0;
+}
+
+.description p{
+  font-size: 1rem;
+  color: var(--primary-color);
+  opacity: 50%;
+  margin: 2rem 0;
+}
+
+.service-button{
+  padding: 1rem;
+  width: 100%;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  color: var(--primary-color);
+  background-color: var(--Primary-color);
+  border: none;
+}
+
+
+.service-buttons{
+  margin: 0 auto;
+  width: 25rem;
+  max-width: 30%;
+  height: 25rem;
+  max-height: 70%;
+  background-color: var(--bg);
+  box-shadow: 2px 2px 20px 3px rgba(0, 0, 0, 0.6);
+  margin-top: 5%;
+}
+
+.service-cta{
+  padding: 1rem;
+  width: 50%;
+  height: 20%;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  color: var(--Primary-color);
+  background-color:  rgb(2, 30, 43);
+  border: solid 1px black;
+  box-shadow: inset 1px 1px 5px 0px rgba(9, 182, 217, 0.5);
+}
+
+.service-cta:active{
+  box-shadow: inset 1px 1px 5px 0px rgba(0, 0, 0, 1);
+  color: var(--Primary-color);
+  background-color: var(--bg);
+}
