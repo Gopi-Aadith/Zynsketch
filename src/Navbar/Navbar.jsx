@@ -10,7 +10,7 @@ const navbar = () => {
       <div className="navbar">
         <div className="navbar1">
           <div className="logo">
-            <img src="src/assets/blue logo mark.svg" alt="logo" />
+            <img src="src/assets/logo mark green.svg" alt="logo" />
             <h1>zynsketch</h1>
           </div>
           <ul className='navbar-menu'>
@@ -26,9 +26,9 @@ const navbar = () => {
               <Link to="/Service" className='navbar-link'>Service</Link>
             </li>
 
-            {/* <li className='navbar-item'>
-              <Link to="/Pricing" className='navbar-link'>Pricing</Link>
-            </li> */}
+            <li className='navbar-item'>
+              <Link to="/Blogs" className='navbar-link'>Blog</Link>
+            </li>
 
             <li className='navbar-item'>
               <a href='/Contact' className='navbar-link'>Contact us</a>

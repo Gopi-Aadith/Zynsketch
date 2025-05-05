@@ -13,8 +13,10 @@
 
 :root{
   --primary-color: #f0f0f0;
+  ---Primary-color: #8edf5f;
   --Primary-color: #09B6D9;
   --bg: #031b25;
+  ---bg: #111;
   --secondary-color: #FF8A05;
   --footer-: #0e0e0e;
   /* ---bg: #082632; */

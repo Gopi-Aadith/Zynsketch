@@ -1,0 +1,123 @@
+.footer {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    padding: 2rem;
+    font-family: sans-serif;
+  }
+  
+  .topSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(---Primary-color);
+    font-family: "russo one", sans-serif;
+  }
+
+  .logo img{
+    width: 4rem;
+    height: auto;
+    padding: 0.5rem;
+  }
+  
+  .linksGrid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 100%;
+    max-width: 900px;
+    gap: 2rem;
+    text-align: left;
+    justify-content: space-around;
+  }
+  
+  .linksGrid h4 {
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  .linksGrid ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .linksGrid li {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .linksGrid li:hover {
+    color: white;
+  }
+  
+  .bottomSection {
+    border-top: 1px solid #333;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .socials {
+    display: flex;
+    gap: 1.2rem;
+    font-size: 1.4rem;
+  }
+  
+  .scrollTop {
+    background-color: #a1d68b;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+  }
+  
+  .scrollTop:hover {
+    background-color: #8ccf6e;
+  }
+  
+  .connect {
+    color: white;
+    margin-top: 1rem;
+  }
+  
+  .connect h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .connect p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #ccc;
+  }
+  
+  .connectButton {
+    background-color: #a1d68b;
+    color: black;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+  }
+  
+  .connectButton:hover {
+    background-color: #8ccf6e;
+  }
+  
+  

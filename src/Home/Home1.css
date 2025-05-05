@@ -1,19 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
-.home {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--bg);
-    height: 100vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-}
-
 .hero{
     width: 90%;
     display: flex;
@@ -178,7 +162,3 @@
     z-index: +10;
     transform: translateY(-10px);
 }
-
-
-/* --------------------------------------------------- media query------------------------------------------------------------------------------------------------------------------- */
-
