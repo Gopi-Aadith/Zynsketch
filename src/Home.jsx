@@ -1,5 +1,6 @@
 import React from 'react'
-
+import AccordionSection from './AccordionSection';
+import FaqSection from './FaqSection';
 import Footer from './Footer'
 
 import './Home.css'
@@ -44,7 +45,8 @@ const home = () => {
 
       </div>
 
-
+      <AccordionSection />
+      <FaqSection />
       <Footer/>
 
 
