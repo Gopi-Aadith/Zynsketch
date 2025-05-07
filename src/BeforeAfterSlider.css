@@ -2,7 +2,7 @@
 .before-after-slider-container {
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 2 / 3;
   overflow: hidden;
   user-select: none;
   display: flex;

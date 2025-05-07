@@ -19,6 +19,7 @@
     height: 100dvh;
     overflow: hidden;
     position: relative;
+    background-color: var(---bg);
 }
 
 .backdrop{

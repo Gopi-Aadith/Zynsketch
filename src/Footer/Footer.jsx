@@ -49,13 +49,11 @@ export default function Footer() {
       </div>
 
       <div className={styles.bottomSection}>
-        <div className={styles.socials}>
-          <FaFacebookF />
-          <FaLinkedinIn />
-          <FaInstagram />
-        </div>
-        <button className={styles.scrollTop}>↑</button>
+        <p className={styles.copyright}>
+          © {new Date().getFullYear()} Zynsketch. All rights reserved.
+        </p>
       </div>
+
     </footer>
   );
 }

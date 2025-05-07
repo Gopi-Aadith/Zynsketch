@@ -1,6 +1,6 @@
 .contact-section {
   padding: 4rem 2rem;
-  background: var(--bg-dark);
+  background: var(---bg);
 }
 
 .contact-container {
@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 3rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: #111;
   border-radius: 20px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -19,14 +19,18 @@
 }
 
 .contact-info-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 3rem;
-  background: linear-gradient(160deg, #0a121e 0%, var(--bg-dark) 100%);
+  background: #000;
+  /* border-right: solid 2px #555; */
 }
 
 .brand-logo {
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
-  background: var(--primary-gradient);
+  background: var(---Primary-color);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -35,10 +39,11 @@
 
 .info-card {
   display: flex;
+  width: 100%;
   gap: 1.5rem;
   margin-bottom: 2rem;
   padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: #0fa56921;
   border-radius: 12px;
   transition: transform 0.3s ease;
 }
@@ -49,7 +54,7 @@
 
 .info-icon {
   font-size: 1.5rem;
-  color: var(--accent);
+  color: var(---Primary-color);
   margin-top: 0.5rem;
 }
 
@@ -78,7 +83,7 @@
 }
 
 .social-links a:hover {
-  color: var(--accent);
+  color: var(---Primary-color);
   transform: translateY(-3px);
 }
 
@@ -92,8 +97,8 @@
 
 .form-header h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.5rem;
-  background: var(--primary-gradient);
+  font-size: 2rem;
+  background: var(---Primary-color);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -101,6 +106,7 @@
 }
 
 .form-header p {
+  font-family: 'Poppins', sans-serif;
   color: rgba(255, 255, 255, 0.8);
   font-size: 1.1rem;
 }
@@ -123,12 +129,12 @@
 }
 
 .form-input:focus, .form-textarea:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 15px rgba(8, 182, 217, 0.2);
+  border-color: var(---Primary-color);
+  box-shadow: 0 0 5px var(---Primary-color);
 }
 
 .input-error {
-  border-color: #ff4757 !important;
+  border-color: #fb1111 !important;
   animation: shake 0.4s ease-in-out;
 }
 
@@ -165,10 +171,11 @@
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
+  color: white;
 }
 
 .service-option:hover {
-  background: rgba(8, 182, 217, 0.1);
+  background: #0fa56921;
 }
 
 .service-option input {
@@ -187,8 +194,8 @@
 }
 
 .service-option input:checked ~ .checkmark {
-  background: var(--accent);
-  border-color: var(--accent);
+  /* background: var(---Primary-color); */
+  border-color: transparent;
 }
 
 .checkmark::after {
@@ -197,7 +204,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: var(---Primary-color);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -206,14 +213,19 @@
   opacity: 1;
 }
 
+.buttonAlign{
+  display: flex;
+  gap: 1rem;
+}
+
 .submit-button {
   position: relative;
   padding: 1.2rem;
-  width: 100%;
-  background: var(--primary-gradient);
-  border: none;
+  width: 50%;
+  background: transparent;
+  border: solid 0.1rem var(---Primary-color);
   border-radius: 8px;
-  color: white;
+  color: var(---Primary-color);
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   overflow: hidden;
@@ -227,7 +239,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: var(--secondary-gradient);
+  background: var(---Primary-color);
   transition: left 0.4s ease;
 }
 
@@ -239,6 +251,11 @@
   position: relative;
   z-index: 2;
 }
+
+.submit-button:hover .button-text {
+  color: #000;
+}
+
 
 @keyframes fadeIn {
   from { opacity: 0; }

@@ -1,6 +1,6 @@
 // Contact.jsx
 import React, { useState } from 'react';
-import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt, FaInstagram, FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa';
 import './Contact.css';
 
 export default function Contact() {
@@ -57,7 +57,7 @@ export default function Contact() {
           <div className="info-card">
             <FaEnvelope className="info-icon" />
             <div>
-              <h3>Chat to us</h3>
+              <h3>General support</h3>
               <p>hi@zynsketch.com</p>
             </div>
           </div>
@@ -66,7 +66,7 @@ export default function Contact() {
             <FaMapMarkerAlt className="info-icon" />
             <div>
               <h3>Visit us</h3>
-              <p>Creative Studio District<br/>Digital City, DC 10001</p>
+              <p>Chennai,<br/>Ch-600077.</p>
             </div>
           </div>
 
@@ -81,7 +81,7 @@ export default function Contact() {
           <div className="social-links">
             <a href="#"><FaInstagram /></a>
             <a href="#"><FaLinkedin /></a>
-            <a href="#"><FaGithub /></a>
+            <a href="#"><FaFacebook /></a>
           </div>
         </div>
 
@@ -147,11 +147,16 @@ export default function Contact() {
                 ))}
               </div>
             </fieldset>
-
+            <div className="buttonAlign">
             <button type="submit" className="submit-button">
               <span className="button-text">Launch Project</span>
               <div className="button-gradient"></div>
             </button>
+            <button type="submit" className="submit-button">
+              <span className="button-text">Launch Project</span>
+              <div className="button-gradient"></div>
+            </button>
+            </div>
           </form>
         </div>
       </div>

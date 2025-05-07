@@ -39,8 +39,9 @@
   }
   
   .linksGrid h4 {
-    color: white;
+    color: var(---Primary-color);
     margin-bottom: 0.5rem;
+    font-size: 1rem;
   }
   
   .linksGrid ul {
@@ -53,6 +54,8 @@
     margin-bottom: 0.5rem;
     cursor: pointer;
     transition: color 0.3s;
+    font-size: 1rem;
+    font-weight: 400;
   }
   
   .linksGrid li:hover {
@@ -60,6 +63,11 @@
   }
   
   .bottomSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     border-top: 1px solid #333;
     margin-top: 2rem;
     padding-top: 1.5rem;
@@ -68,25 +76,8 @@
     align-items: center;
   }
   
-  .socials {
-    display: flex;
-    gap: 1.2rem;
-    font-size: 1.4rem;
-  }
-  
-  .scrollTop {
-    background-color: #a1d68b;
-    border: none;
-    padding: 0.6rem 1rem;
-    border-radius: 0.3rem;
-    cursor: pointer;
-    color: #fff;
-    font-size: 1.2rem;
-    transition: background-color 0.3s;
-  }
-  
-  .scrollTop:hover {
-    background-color: #8ccf6e;
+  .copyright{
+    margin: 0;
   }
   
   .connect {

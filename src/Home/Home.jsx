@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import Sections from './Sections';
 import Stats from './Stats';
 import FAQ from './FAQ';
-import Footer from '../Footer/Footer'
 
 import './Home.css';
 
@@ -80,7 +79,6 @@ const Home = () => {
           <FAQ />
         </motion.div>
       </div>
-      <Footer/>
     </div>
   );
 };
